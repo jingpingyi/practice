@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>practice7.9</title>
+    <style>
+        body{font-family: Arial;}
+        .layout{
+        width: 600px;
+        margin: auto;
+    }
+        .layout>table{margin-top: 30px;}
+        .tab{
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #ccc;
+        }
+        .tab tr{
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .tab tr:nth-child(even){
+            background-color: #F1F1F1;
+        }
+        .tab th{
+            padding: 8px;
+            background-color: #4CAF50;
+            color:#fff;
+        }
+        .tab td{padding: 8px;}
+
+        .tab.v2{border:none;
+        }
+        .tab.v2 th{
+            background-color: #fff;
+            color:#000;
+
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <table class="tab">
+        <tbody>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>Bo</td>
+            <td>Nilsson</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Mike</td>
+            <td>Ross</td>
+            <td>35</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="tab v2">
+        <tbody>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>Bo</td>
+            <td>Nilsson</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Mike</td>
+            <td>Ross</td>
+            <td>35</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
