@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>practice_12.3</title>
+  <style>
+    /*.layout {*/
+      /*width: 600px;*/
+      /*!*background-color: #ccc;*!*/
+    /*}*/
+    .style-1 {
+      width: 200px;
+      height: 100px;
+      border: 1px solid #ccc;
+      margin:30px;
+      position: relative;
+    }
+
+    .super-mark::before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position:absolute;
+      top: -24px;
+      left: 6px;
+      border: 12px solid #fff;
+      border-bottom: 12px solid #878787;
+      }
+
+    .right-mark::before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 10px solid red;
+      border-left: 10px solid #fff;
+      border-bottom: 10px solid #fff;
+    }
+
+    .mark2::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position:absolute;
+      top: -23px;
+      left: 6px;
+      border-width: 12px;
+      border-style: solid;
+      border-color: transparent transparent #fff transparent;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="super-mark style-1"></div>
+    <div class="right-mark style-1"></div>
+    <div class="super-mark mark2 style-1"></div>
+  </div>
+</body>
+</html>
