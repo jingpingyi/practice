@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice_11.5</title>
+    <style>
+        .layout{
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #ccc;
+            position: relative;
+        }
+        .wrap{
+            position: absolute;
+            top: 50%; left: 50%;
+            /*border: 1px dashed;*/
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        p { white-space:nowrap; }
+        /*.wrap h1,.wrap p{*/
+            /*background-color: red;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="wrap">
+            <h1>这是标题</h1>
+            <p>这是内容，这段文字在当前区块内垂直水平居中</p>
+        </div>
+    </div>
+
+</body>
+</html>

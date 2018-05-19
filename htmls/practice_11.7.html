@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice_11.7</title>
+    <style>
+        .wrap{
+            width: 600px;height: 600px;
+            border: 1px solid red;
+            margin: 0 auto;
+            text-align: center;
+
+
+        }
+        .wrap:before{
+            content: '';
+            display: inline-block;
+            /*border: 1px solid;*/
+            height: 100%;
+            line-height: 100%;
+            vertical-align: middle;
+
+        }
+        .wrap>img{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <img src="../imgs/light.jpg" alt="there is no picture here!">
+    </div>
+
+</body>
+</html>

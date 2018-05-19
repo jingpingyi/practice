@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice_11.8</title>
+    <style>
+        .wrap{
+            width: 300px; height: 200px;
+            background-color: black;
+            border: 2px solid red;
+            position: fixed;
+            top: 50%;left: 50%;
+            margin-left: -150px;
+            margin-top: -100px;
+        }
+        .left_eye{
+            width: 60px; height: 60px;
+            background-color: #fff;
+            border-radius: 30px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 42px;
+            position: absolute;
+            top: 20px;left: 45px;
+            overflow: hidden;
+        }
+        .right_eye{
+            width: 60px; height: 60px;
+            background-color: #fff;
+            border-radius: 30px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 42px;
+            position: absolute;
+            top: 20px;right: 45px;
+            overflow: hidden;
+        }
+        span{
+            background-color: pink;
+            padding: 5px ;
+        }
+        .mouth{
+            width: 120px; height: 65px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 20px; left: 91px;
+            overflow: hidden;
+        }
+        .teeth{
+            list-style: none;
+            margin: 0;padding: 0;
+        }
+        .teeth>li{
+            margin-left: 11px;
+            display: inline-block;
+            width:40px;height:18px;
+            background-color: black;
+        }
+        .tongue{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: 15px;
+            margin-left: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left_eye"><span>0</span></div>
+        <div class="right_eye"><span>0</span></div>
+        <div class="mouth">
+            <ul class="teeth">
+                <li></li>
+                <li></li>
+
+            </ul>
+            <div class="tongue"></div>
+        </div>
+    </div>
+</body>
+</html>
